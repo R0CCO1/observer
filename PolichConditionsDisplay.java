@@ -8,7 +8,7 @@ public class PolichConditionsDisplay implements Observer, DisplayElement {
     private float humidity;
     private Subject weatherData;
 
-    public SchaperConditionsDisplay(Subject weatherData) {
+    public PolichConditionsDisplay(Subject weatherData) {
         this.weatherData = weatherData;
         weatherData.registerObserver(this);
     }
